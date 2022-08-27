@@ -1,0 +1,21 @@
+<title>First flask</title>
+
+<h1>mi primer flask</h1>
+<table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Occupation</th>
+        </tr>
+    </thead>
+    <body>
+        {% for one_friend in friends %}
+            <tr>
+                <td>{{ one_friend.first_name }}</td>
+                <td>{{ one_friend.last_name }}</td>
+                <td>{{ one_friend.occupation }}</td>
+            </tr>
+        {% endfor %}
+    </body>
+</table>
